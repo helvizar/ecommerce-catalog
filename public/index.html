@@ -1,17 +1,135 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./ecommerce-icon.png" type="image/icon type">
+    <title>E-Commerce TASK_5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/style/style.css"> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="./ecommerce-icon.png" alt="Ecommerce Logo">
+            </a>
+            <div class="dropdown">
+                <div class="select">Menu
+                    <span class="selected"></span>
+                    <div class="sign"></div>
+                </div>
+                <ul class="menu">
+                    <li><a href="#content">Home</a></li>
+                    <li><a href="#men">Men's Clothing</a></li>
+                    <li><a href="#tentang-kami">Women's Clothing</a></li>
+                    <li><a href="#forum">About Us</a></li>
+                    <span><a href="#" onclick="notyet()">Order Now</a></span>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="top">
+                <div class="top-content">
+                    <h2>Every Product is <span>Special</span></h2>
+                    <p>
+                        The cold won't bother you anymore when you wear one of our jackets and sweaters. <br>
+                        They're made of the most durable materials and are superbly dense to keep you warm even on the coldest nights.
+                    </p>
+                </div>
+            </article>
+
+            
+
+            <article class="playforum" id="men">
+                <h2>Men's Clothing</h2>
+                
+                
+            </article>
+
+            <article class="main-review">
+                <div class="container">
+                    <article class="games">
+                        <section class="game card1">
+                            <figure>
+                                <img src="./man-jaket.png" alt="">
+                                <figcaption>Men's Leather Jacket</figcaption>
+                            </figure>
+                            <p>$599.99</p>
+
+                            <p>
+                                From timeless tailoring to everyday wear, the right jacket will keep you warm and in style. The color brings out your honest look while this black leather motorcycle is superior and modish will give you just the right look to make a status statement and will be a staple item in your closet all year long and for years to come.                            </p>
+                        </section>
+                        <section class="game card1">
+                            <figure>
+                                <img src="./man-shirt.png" alt="">
+                                <figcaption>Men's Shirt</figcaption>
+                            </figure>
+                            <p>$80.00</p>
+                            <p>
+                                These t-shirts are a comfortable and durable alternative to standard cotton tees. It’s designed to be worn all day by the man in demand. This classic design will keep you looking presentable on the go with a gentle fabric for comfort all day.                            </p>
+                        </section>
+                    </article>
+
+                    <a class="selengkapnya" href="#" onclick="notyet()">Read More</a>
+                </div>
+            </article>
+    
+            <article class="playforum" id="tentang-kami">
+                <h2>Women's Clothing</h2>
+                
+            </article>
+
+            <article class="main-review">
+                <div class="container">
+                    <article class="games">
+                        <section class="game card2">
+                            <figure>
+                                <img src="./woman-jacket.png" alt="">
+                                <figcaption>Women's Red Plaid Jacket</figcaption>
+                            </figure>
+                            <p>$389.99</p>
+
+                            <p>
+                                It features soft fuzzy fabric, front button closure , and midweight feel for keeping warm all day. It'll be the prefect addition to your wardrobe.Two buttoned chest pockets / long sleeves with button cuffs / plaid pattern / loose fit shacket / collared.This shacket is a must have in your closet!                            </p>
+                        </section>
+                        <section class="game card2">
+                            <figure>
+                                <img src="./woman-jacket2.png" alt="">
+                                <figcaption>Women's Windbreaker</figcaption>
+                            </figure>
+                            <p>$469.99</p>
+                            <p>
+                                Made of high quality 55% Nylon/ 45% Spandex fabric, skin-friendly, soft and comfortable to wear, will keep your warm and fashion style in fall,spring and cold winter.
+                                Perfect for casual daily life,shopping, street wear, working, office, school,holiday, vacation, night out, outdoor etc,suitable for autumn, winter and spring.</p>
+                        </section>
+                    </article>
+
+                    <a class="selengkapnya" href="#" onclick="notyet()">Read More</a>
+                </div>
+            </article>
+
+            <article class="community" id="forum">
+                    <h2>About Us</h2>
+                    <p>
+                        We aim to offer our customers a variety of the latest fashion. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget-friendly products. We offer all of this while providing excellent customer service and friendly support.                        
+                    <div class="social-media">
+                        <a href="#" id="twitter"><i class="fab fa-twitter fa-2xl"></i></a>
+                        <a href="#" id="facebook"><i class="fab fa-facebook-f fa-2xl"></i></a>
+                        <a href="#" id="reddit"><i class="fab fa-reddit fa-2xl"></i></a>
+                        <a href="#" id="whatsapp"><i class="fab fa-whatsapp fa-2xl"></i></a>
+                    </div>   
+            </article>
+        </div>
+    <footer>
+        <p>E-Commerce Helvizar ©2022 All rights reserved</p>
+    </footer>
+
+    <script src="/src/assets/index.js"></script>
+</body>
 </html>
